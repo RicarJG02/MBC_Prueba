@@ -15,6 +15,15 @@
 		8CD732FD2AFD48C2007155EE /* MBC_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD732FC2AFD48C2007155EE /* MBC_TestUITests.swift */; };
 		8CD732FF2AFD48C2007155EE /* MBC_TestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD732FE2AFD48C2007155EE /* MBC_TestUITestsLaunchTests.swift */; };
 		8CD7330F2AFD4967007155EE /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7330E2AFD4967007155EE /* Token.swift */; };
+		8CD733112AFD4B71007155EE /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD733102AFD4B71007155EE /* Survey.swift */; };
+		8CD733132AFD4B9A007155EE /* Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD733122AFD4B9A007155EE /* Attributes.swift */; };
+		8CD733152AFD4BCB007155EE /* TokenAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD733142AFD4BCB007155EE /* TokenAttributes.swift */; };
+		8CD733172AFD4BF8007155EE /* TokenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD733162AFD4BF8007155EE /* TokenData.swift */; };
+		8CD7331A2AFD4DBE007155EE /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD733192AFD4DBE007155EE /* LogInViewModel.swift */; };
+		8CD7331C2AFD4E35007155EE /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7331B2AFD4E35007155EE /* ForgotPasswordView.swift */; };
+		8CD7331E2AFD4E45007155EE /* SurveysListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7331D2AFD4E45007155EE /* SurveysListView.swift */; };
+		8CD733202AFD5290007155EE /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7331F2AFD5290007155EE /* AuthenticationService.swift */; };
+		8CD733232AFD52A8007155EE /* TokenStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD733222AFD52A8007155EE /* TokenStorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +55,15 @@
 		8CD732FC2AFD48C2007155EE /* MBC_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBC_TestUITests.swift; sourceTree = "<group>"; };
 		8CD732FE2AFD48C2007155EE /* MBC_TestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBC_TestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8CD7330E2AFD4967007155EE /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		8CD733102AFD4B71007155EE /* Survey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
+		8CD733122AFD4B9A007155EE /* Attributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attributes.swift; sourceTree = "<group>"; };
+		8CD733142AFD4BCB007155EE /* TokenAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenAttributes.swift; sourceTree = "<group>"; };
+		8CD733162AFD4BF8007155EE /* TokenData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenData.swift; sourceTree = "<group>"; };
+		8CD733192AFD4DBE007155EE /* LogInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
+		8CD7331B2AFD4E35007155EE /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		8CD7331D2AFD4E45007155EE /* SurveysListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveysListView.swift; sourceTree = "<group>"; };
+		8CD7331F2AFD5290007155EE /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		8CD733222AFD52A8007155EE /* TokenStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +114,8 @@
 		8CD732E02AFD48BF007155EE /* MBC_Test */ = {
 			isa = PBXGroup;
 			children = (
+				8CD733212AFD529B007155EE /* Persistance */,
+				8CD733182AFD4C47007155EE /* Services */,
 				8CD7330D2AFD48DE007155EE /* ViewModels */,
 				8CD7330C2AFD48D8007155EE /* Views */,
 				8CD7330B2AFD48CA007155EE /* Models */,
@@ -135,6 +155,10 @@
 			isa = PBXGroup;
 			children = (
 				8CD7330E2AFD4967007155EE /* Token.swift */,
+				8CD733162AFD4BF8007155EE /* TokenData.swift */,
+				8CD733142AFD4BCB007155EE /* TokenAttributes.swift */,
+				8CD733102AFD4B71007155EE /* Survey.swift */,
+				8CD733122AFD4B9A007155EE /* Attributes.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -143,6 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				8CD732E32AFD48BF007155EE /* LogInView.swift */,
+				8CD7331B2AFD4E35007155EE /* ForgotPasswordView.swift */,
+				8CD7331D2AFD4E45007155EE /* SurveysListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -150,8 +176,25 @@
 		8CD7330D2AFD48DE007155EE /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				8CD733192AFD4DBE007155EE /* LogInViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8CD733182AFD4C47007155EE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8CD7331F2AFD5290007155EE /* AuthenticationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8CD733212AFD529B007155EE /* Persistance */ = {
+			isa = PBXGroup;
+			children = (
+				8CD733222AFD52A8007155EE /* TokenStorageManager.swift */,
+			);
+			path = Persistance;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,7 +328,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CD7330F2AFD4967007155EE /* Token.swift in Sources */,
+				8CD733112AFD4B71007155EE /* Survey.swift in Sources */,
 				8CD732E42AFD48BF007155EE /* LogInView.swift in Sources */,
+				8CD733132AFD4B9A007155EE /* Attributes.swift in Sources */,
+				8CD733202AFD5290007155EE /* AuthenticationService.swift in Sources */,
+				8CD7331A2AFD4DBE007155EE /* LogInViewModel.swift in Sources */,
+				8CD733172AFD4BF8007155EE /* TokenData.swift in Sources */,
+				8CD7331E2AFD4E45007155EE /* SurveysListView.swift in Sources */,
+				8CD733152AFD4BCB007155EE /* TokenAttributes.swift in Sources */,
+				8CD733232AFD52A8007155EE /* TokenStorageManager.swift in Sources */,
+				8CD7331C2AFD4E35007155EE /* ForgotPasswordView.swift in Sources */,
 				8CD732E22AFD48BF007155EE /* MBC_TestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
