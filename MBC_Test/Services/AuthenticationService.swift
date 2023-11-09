@@ -17,7 +17,7 @@ protocol AuthenticationServiceProtocol {
     func authenticate(email: String, password: String, completion: @escaping (Result<AuthData, Error>) -> Void)
 }
 
-class AuthenticationService: AuthenticationServiceProtocol {
+class AuthenticationService: AuthenticationServiceProtocol, ObservableObject {
     let baseUrl = "https://survey-api.nimblehq.co"
     let clientId = "ofzl-2h5ympKa0WqqTzqlVJUiRsxmXQmt5tkgrlWnOE"
     let clientSecret = "lMQb900L-mTeU-FVTCwyhjsfBwRCxwwbCitPob96cuU"

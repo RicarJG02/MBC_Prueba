@@ -24,6 +24,11 @@
 		8CD7331E2AFD4E45007155EE /* SurveysListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7331D2AFD4E45007155EE /* SurveysListView.swift */; };
 		8CD733202AFD5290007155EE /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7331F2AFD5290007155EE /* AuthenticationService.swift */; };
 		8CD733232AFD52A8007155EE /* TokenStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD733222AFD52A8007155EE /* TokenStorageManager.swift */; };
+		8CD733252AFD5AC5007155EE /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD733242AFD5AC5007155EE /* ForgotPasswordViewModel.swift */; };
+		8CD733282AFD6202007155EE /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD733272AFD6202007155EE /* NotificationService.swift */; };
+		8CD7332A2AFD63FF007155EE /* PasswordResetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD733292AFD63FF007155EE /* PasswordResetService.swift */; };
+		8CD7332D2AFD6478007155EE /* PasswordResetServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7332C2AFD6478007155EE /* PasswordResetServiceProtocol.swift */; };
+		8CD7332F2AFD653E007155EE /* NotificationServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7332E2AFD653E007155EE /* NotificationServiceProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +69,11 @@
 		8CD7331D2AFD4E45007155EE /* SurveysListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveysListView.swift; sourceTree = "<group>"; };
 		8CD7331F2AFD5290007155EE /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		8CD733222AFD52A8007155EE /* TokenStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStorageManager.swift; sourceTree = "<group>"; };
+		8CD733242AFD5AC5007155EE /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
+		8CD733272AFD6202007155EE /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		8CD733292AFD63FF007155EE /* PasswordResetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetService.swift; sourceTree = "<group>"; };
+		8CD7332C2AFD6478007155EE /* PasswordResetServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetServiceProtocol.swift; sourceTree = "<group>"; };
+		8CD7332E2AFD653E007155EE /* NotificationServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationServiceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +124,8 @@
 		8CD732E02AFD48BF007155EE /* MBC_Test */ = {
 			isa = PBXGroup;
 			children = (
+				8CD7332B2AFD6461007155EE /* Protocol */,
+				8CD733262AFD61D9007155EE /* Notifications */,
 				8CD733212AFD529B007155EE /* Persistance */,
 				8CD733182AFD4C47007155EE /* Services */,
 				8CD7330D2AFD48DE007155EE /* ViewModels */,
@@ -177,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				8CD733192AFD4DBE007155EE /* LogInViewModel.swift */,
+				8CD733242AFD5AC5007155EE /* ForgotPasswordViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -185,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				8CD7331F2AFD5290007155EE /* AuthenticationService.swift */,
+				8CD733292AFD63FF007155EE /* PasswordResetService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -195,6 +209,23 @@
 				8CD733222AFD52A8007155EE /* TokenStorageManager.swift */,
 			);
 			path = Persistance;
+			sourceTree = "<group>";
+		};
+		8CD733262AFD61D9007155EE /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				8CD733272AFD6202007155EE /* NotificationService.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		8CD7332B2AFD6461007155EE /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				8CD7332C2AFD6478007155EE /* PasswordResetServiceProtocol.swift */,
+				8CD7332E2AFD653E007155EE /* NotificationServiceProtocol.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,15 +360,20 @@
 			files = (
 				8CD7330F2AFD4967007155EE /* Token.swift in Sources */,
 				8CD733112AFD4B71007155EE /* Survey.swift in Sources */,
+				8CD733282AFD6202007155EE /* NotificationService.swift in Sources */,
 				8CD732E42AFD48BF007155EE /* LogInView.swift in Sources */,
 				8CD733132AFD4B9A007155EE /* Attributes.swift in Sources */,
+				8CD7332F2AFD653E007155EE /* NotificationServiceProtocol.swift in Sources */,
 				8CD733202AFD5290007155EE /* AuthenticationService.swift in Sources */,
 				8CD7331A2AFD4DBE007155EE /* LogInViewModel.swift in Sources */,
+				8CD733252AFD5AC5007155EE /* ForgotPasswordViewModel.swift in Sources */,
 				8CD733172AFD4BF8007155EE /* TokenData.swift in Sources */,
 				8CD7331E2AFD4E45007155EE /* SurveysListView.swift in Sources */,
 				8CD733152AFD4BCB007155EE /* TokenAttributes.swift in Sources */,
+				8CD7332A2AFD63FF007155EE /* PasswordResetService.swift in Sources */,
 				8CD733232AFD52A8007155EE /* TokenStorageManager.swift in Sources */,
 				8CD7331C2AFD4E35007155EE /* ForgotPasswordView.swift in Sources */,
+				8CD7332D2AFD6478007155EE /* PasswordResetServiceProtocol.swift in Sources */,
 				8CD732E22AFD48BF007155EE /* MBC_TestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
