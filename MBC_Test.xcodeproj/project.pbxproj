@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		8CD732E22AFD48BF007155EE /* MBC_TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD732E12AFD48BF007155EE /* MBC_TestApp.swift */; };
-		8CD732E42AFD48BF007155EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD732E32AFD48BF007155EE /* ContentView.swift */; };
+		8CD732E42AFD48BF007155EE /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD732E32AFD48BF007155EE /* LogInView.swift */; };
 		8CD732E62AFD48C1007155EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CD732E52AFD48C1007155EE /* Assets.xcassets */; };
 		8CD732E92AFD48C1007155EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CD732E82AFD48C1007155EE /* Preview Assets.xcassets */; };
 		8CD732F32AFD48C2007155EE /* MBC_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD732F22AFD48C2007155EE /* MBC_TestTests.swift */; };
 		8CD732FD2AFD48C2007155EE /* MBC_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD732FC2AFD48C2007155EE /* MBC_TestUITests.swift */; };
 		8CD732FF2AFD48C2007155EE /* MBC_TestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD732FE2AFD48C2007155EE /* MBC_TestUITestsLaunchTests.swift */; };
+		8CD7330F2AFD4967007155EE /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7330E2AFD4967007155EE /* Token.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		8CD732DE2AFD48BF007155EE /* MBC_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBC_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CD732E12AFD48BF007155EE /* MBC_TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBC_TestApp.swift; sourceTree = "<group>"; };
-		8CD732E32AFD48BF007155EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8CD732E32AFD48BF007155EE /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		8CD732E52AFD48C1007155EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CD732E82AFD48C1007155EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8CD732EE2AFD48C2007155EE /* MBC_TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBC_TestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,7 @@
 		8CD732F82AFD48C2007155EE /* MBC_TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBC_TestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CD732FC2AFD48C2007155EE /* MBC_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBC_TestUITests.swift; sourceTree = "<group>"; };
 		8CD732FE2AFD48C2007155EE /* MBC_TestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBC_TestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8CD7330E2AFD4967007155EE /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,10 @@
 		8CD732E02AFD48BF007155EE /* MBC_Test */ = {
 			isa = PBXGroup;
 			children = (
+				8CD7330D2AFD48DE007155EE /* ViewModels */,
+				8CD7330C2AFD48D8007155EE /* Views */,
+				8CD7330B2AFD48CA007155EE /* Models */,
 				8CD732E12AFD48BF007155EE /* MBC_TestApp.swift */,
-				8CD732E32AFD48BF007155EE /* ContentView.swift */,
 				8CD732E52AFD48C1007155EE /* Assets.xcassets */,
 				8CD732E72AFD48C1007155EE /* Preview Content */,
 			);
@@ -125,6 +129,29 @@
 				8CD732FE2AFD48C2007155EE /* MBC_TestUITestsLaunchTests.swift */,
 			);
 			path = MBC_TestUITests;
+			sourceTree = "<group>";
+		};
+		8CD7330B2AFD48CA007155EE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8CD7330E2AFD4967007155EE /* Token.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8CD7330C2AFD48D8007155EE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8CD732E32AFD48BF007155EE /* LogInView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8CD7330D2AFD48DE007155EE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +284,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CD732E42AFD48BF007155EE /* ContentView.swift in Sources */,
+				8CD7330F2AFD4967007155EE /* Token.swift in Sources */,
+				8CD732E42AFD48BF007155EE /* LogInView.swift in Sources */,
 				8CD732E22AFD48BF007155EE /* MBC_TestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

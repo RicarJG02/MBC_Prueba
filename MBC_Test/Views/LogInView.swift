@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  LogInView.swift
 //  MBC_Test
 //
 //  Created by Ricardo Guerrero Godínez on 9/11/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LogInView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -19,8 +19,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LogInView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LogInView()
     }
 }
