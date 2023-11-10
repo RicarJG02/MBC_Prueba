@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Survey: Decodable, Identifiable {
+struct Survey: Codable, Identifiable {
     
     var id: String
     var type: String

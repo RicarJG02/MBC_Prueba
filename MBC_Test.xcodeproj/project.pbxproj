@@ -35,6 +35,7 @@
 		8CD733382AFD6F16007155EE /* SurveyListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD733372AFD6F16007155EE /* SurveyListResponse.swift */; };
 		8CD7333A2AFD6F39007155EE /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD733392AFD6F39007155EE /* Meta.swift */; };
 		8CD7333C2AFD776D007155EE /* AuthenticationServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7333B2AFD776D007155EE /* AuthenticationServiceProtocol.swift */; };
+		8CD7333F2AFE1EF9007155EE /* SurveysListViewModel+Caching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7333E2AFE1EF9007155EE /* SurveysListViewModel+Caching.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		8CD733372AFD6F16007155EE /* SurveyListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyListResponse.swift; sourceTree = "<group>"; };
 		8CD733392AFD6F39007155EE /* Meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
 		8CD7333B2AFD776D007155EE /* AuthenticationServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationServiceProtocol.swift; sourceTree = "<group>"; };
+		8CD7333E2AFE1EF9007155EE /* SurveysListViewModel+Caching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SurveysListViewModel+Caching.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +207,7 @@
 				8CD733192AFD4DBE007155EE /* LogInViewModel.swift */,
 				8CD733242AFD5AC5007155EE /* ForgotPasswordViewModel.swift */,
 				8CD733332AFD6D47007155EE /* SurveysListViewModel.swift */,
+				8CD7333D2AFE1EE9007155EE /* Extension */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -252,6 +255,14 @@
 				8CD733352AFD6D6E007155EE /* SurveyDetailScreen.swift */,
 			);
 			path = Survey;
+			sourceTree = "<group>";
+		};
+		8CD7333D2AFE1EE9007155EE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8CD7333E2AFE1EF9007155EE /* SurveysListViewModel+Caching.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,6 +409,7 @@
 				8CD733202AFD5290007155EE /* AuthenticationService.swift in Sources */,
 				8CD7331A2AFD4DBE007155EE /* LogInViewModel.swift in Sources */,
 				8CD733252AFD5AC5007155EE /* ForgotPasswordViewModel.swift in Sources */,
+				8CD7333F2AFE1EF9007155EE /* SurveysListViewModel+Caching.swift in Sources */,
 				8CD733172AFD4BF8007155EE /* TokenData.swift in Sources */,
 				8CD7331E2AFD4E45007155EE /* SurveysListView.swift in Sources */,
 				8CD733152AFD4BCB007155EE /* TokenAttributes.swift in Sources */,

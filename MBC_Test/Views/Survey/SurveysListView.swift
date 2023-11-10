@@ -44,7 +44,6 @@ struct SurveysListView: View {
             //                    ProgressView()
             //                }
             //            } else {
-            //                // Imagen de fondo por defecto si no hay URL o si hay un error al cargar la imagen
             //                Color.black.edgesIgnoringSafeArea(.all)
             //            }
             
@@ -91,7 +90,10 @@ struct SurveysListView: View {
                             }
                         }
                     }
-                    .refreshable { // Si hace el refresh pero solo lo hace vertical
+                    // Si hace el refresh pero solo lo hace vertical ya que es nativo.
+                    // Se puede realizar un gesto personalizado, detectando la posición
+                    // de desplazamiento y con eso una actualización.
+                    .refreshable {
                         await refreshData()
                     }
                     .padding()
@@ -105,10 +107,10 @@ struct SurveysListView: View {
         }
     }
     
-    @MainActor // ensure UI updates are on the main thread
+    @MainActor
     func refreshData() async {
         isRefreshing = true
-        await viewModel.loadSurveys() // Await the refresh of surveys
+        await viewModel.loadSurveys()
         isRefreshing = false
     }
 }

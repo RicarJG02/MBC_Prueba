@@ -20,7 +20,7 @@ class SurveysListViewModel: ObservableObject {
         loadData(with: urlString)
     }
 
-    private func loadData(with urlString: String) {
+    func loadData(with urlString: String) {
         guard let url = URL(string: urlString) else {
             print("Invalid URL")
             isLoading = false
@@ -68,6 +68,7 @@ class SurveysListViewModel: ObservableObject {
             let decodedData = try decoder.decode(SurveyListResponse.self, from: data)
             surveys = decodedData.data
             print("Decoding successful, \(surveys.count) surveys loaded.")
+            cacheSurveys()
         } catch {
             print("Error decoding JSON: \(error)")
         }
@@ -75,6 +76,7 @@ class SurveysListViewModel: ObservableObject {
 
     func refreshToken() {
         print("Attempting to refresh token...")
+        loadSurveys()
     }
 
     func formattedDateString() -> String {

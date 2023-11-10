@@ -62,8 +62,6 @@ struct SurveyCardView: View {
             }
         }
         .frame(width: 320, alignment: .leading)
-//        .background(Color.black.opacity(0.7))
-//        .cornerRadius(10)
         .onAppear {
             if index == selectedCard {
                 selectedCard += 1

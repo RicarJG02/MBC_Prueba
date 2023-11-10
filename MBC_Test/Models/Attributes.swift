@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Attributes: Decodable {
+struct Attributes: Codable {
     
     var title: String
     var description: String

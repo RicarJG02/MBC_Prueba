@@ -25,21 +25,17 @@ struct SurveyDetailScreen: View {
                             .ignoresSafeArea()
                             .opacity(0.5)
                     case .failure(_):
-                        // In case of failure show a placeholder or a default image
                         Image("background")
                             .resizable()
                             .ignoresSafeArea()
                     case .empty:
-                        // While loading the image, you can show a placeholder
                         ProgressView()
                             .ignoresSafeArea()
                     @unknown default:
-                        // Handle any future cases of the phase enum
                         EmptyView()
                     }
                 }
             } else {
-                // If the URL is not valid, show a default background
                 Image("background")
                     .resizable()
                     .ignoresSafeArea()
