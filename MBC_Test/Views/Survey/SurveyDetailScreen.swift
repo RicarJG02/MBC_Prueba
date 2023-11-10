@@ -13,9 +13,37 @@ struct SurveyDetailScreen: View {
     
     var body: some View {
         ZStack {
-            Image("background")
-                .resizable()
-                .ignoresSafeArea()
+            
+            // MARK: Acá demuestro el punto que menciono en SurveysListView de la imagen
+            
+            if let urlString = survey.attributes.cover_image_url, let url = URL(string: urlString) {
+                AsyncImage(url: url) { phase in
+                    switch phase {
+                    case .success(let image):
+                        image
+                            .resizable()
+                            .ignoresSafeArea()
+                            .opacity(0.5)
+                    case .failure(_):
+                        // In case of failure show a placeholder or a default image
+                        Image("background")
+                            .resizable()
+                            .ignoresSafeArea()
+                    case .empty:
+                        // While loading the image, you can show a placeholder
+                        ProgressView()
+                            .ignoresSafeArea()
+                    @unknown default:
+                        // Handle any future cases of the phase enum
+                        EmptyView()
+                    }
+                }
+            } else {
+                // If the URL is not valid, show a default background
+                Image("background")
+                    .resizable()
+                    .ignoresSafeArea()
+            }
             
             VStack(alignment: .leading, spacing: 20) {
                 Text("1/5")
