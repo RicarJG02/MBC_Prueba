@@ -4,6 +4,9 @@
 
 This application allows users to browse and take surveys on their mobile devices. It requires user authentication and provides a seamless experience for accessing various surveys with an intuitive user interface.
 
+Log in - Your_email@example.com
+Password - 12345678
+
 ## Features
 
 ### Authentication
