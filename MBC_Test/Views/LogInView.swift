@@ -63,7 +63,7 @@ struct LogInView: View {
                     .buttonStyle(.borderedProminent)
                     .padding()
                     
-                    NavigationLink(destination: SurveysListView(), isActive: $viewModel.isSurveyListPresented) {
+                    NavigationLink(destination: SurveysListView(viewModel: SurveysListViewModel()), isActive: $viewModel.isSurveyListPresented) {
                         EmptyView()
                     }
                     NavigationLink(destination: ForgotPasswordView(), isActive: $viewModel.isRecoverPresented) {

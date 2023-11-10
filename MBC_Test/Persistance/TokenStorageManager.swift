@@ -9,19 +9,32 @@ import Foundation
 
 class TokenStorageManager {
     static let shared = TokenStorageManager()
-
+    
     private enum Keys {
         static let accessToken = "AccessToken"
         static let expiresIn = "ExpiresIn"
         static let refreshToken = "RefreshToken"
     }
 
-    init() {}
-
     func saveAccessToken(token: String, validDuration: Int, renewalToken: String) {
         let defaults = UserDefaults.standard
-        defaults.set(token, forKey: "TokenAccessKey")
-        defaults.set(validDuration, forKey: "TokenValidityKey")
-        defaults.set(renewalToken, forKey: "TokenRenewalKey")
+        defaults.set(token, forKey: Keys.accessToken)
+        defaults.set(validDuration, forKey: Keys.expiresIn)
+        defaults.set(renewalToken, forKey: Keys.refreshToken)
+    }
+
+    func getAccessToken() -> String? {
+        let defaults = UserDefaults.standard
+        return defaults.string(forKey: Keys.accessToken)
+    }
+
+    func getExpiresIn() -> Int {
+        let defaults = UserDefaults.standard
+        return defaults.integer(forKey: Keys.expiresIn)
+    }
+
+    func getRefreshToken() -> String? {
+        let defaults = UserDefaults.standard
+        return defaults.string(forKey: Keys.refreshToken)
     }
 }

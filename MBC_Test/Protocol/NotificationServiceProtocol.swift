@@ -11,4 +11,3 @@ protocol NotificationServiceProtocol {
     func requestAuthorization(completion: @escaping (Bool, Error?) -> Void)
     func scheduleNotification(title: String, body: String)
 }
-

@@ -35,4 +35,3 @@ class NotificationService: NotificationServiceProtocol {
         }
     }
 }
-
